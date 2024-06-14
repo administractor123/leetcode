@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Code\leetcode\LeetCode\0143ReorderList\main.cpp(19,20): warning C4018: “<”: 有符号/无符号不匹配
+  0143ReorderList.vcxproj -> D:\Code\leetcode\LeetCode\Debug\0143ReorderList.exe

@@ -1,0 +1,3 @@
+﻿  源.cpp
+D:\Code\leetcode\LeetCode\0125ValidPalindrome\源.cpp(9,20): warning C4018: “<”: 有符号/无符号不匹配
+  0125ValidPalindrome.vcxproj -> D:\Code\leetcode\LeetCode\Debug\0125ValidPalindrome.exe
