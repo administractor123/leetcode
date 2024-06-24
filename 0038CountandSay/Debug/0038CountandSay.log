@@ -1,4 +1,0 @@
-﻿  main.cpp
-D:\Code\leetcode\LeetCode\0038CountandSay\main.cpp(15,14): warning C4018: “<”: 有符号/无符号不匹配
-D:\Code\leetcode\LeetCode\0038CountandSay\main.cpp(17,15): warning C4018: “<”: 有符号/无符号不匹配
-  0038CountandSay.vcxproj -> D:\Code\leetcode\LeetCode\Debug\0038CountandSay.exe
