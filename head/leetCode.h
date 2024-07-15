@@ -10,3 +10,4 @@
 #include <unordered_map>
 #include <cstring>
 #include <string>
+#include <limits>
