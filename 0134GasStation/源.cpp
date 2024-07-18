@@ -1,44 +1,33 @@
-#include<iostream>
+#include "../head/leetCode.h"
+#include <iostream>
+
 using namespace std;
-#include<vector>
 
-int canCompleteCircuit(vector<int>& gas, vector<int>& cost)
+class Solution
 {
-	int n = gas.size();
-	int start = 0;
-	while (start < n)
+public:
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) 
 	{
-		int sumGas = 0;
-		int sumCost = 0;
-		int cnt = 0;
-		while (cnt < n)
+		int curGas = 0;
+		int totalGas = 0;
+		int start = 0;
+		for (int i = 0; i < gas.size(); ++i)
 		{
-			int pos = (start + cnt) % n;
-			sumGas += gas[pos];
-			sumCost += cost[pos];
-			if (sumGas < sumCost)
+			curGas += gas[i] - cost[i];
+			totalGas += gas[i] - cost[i];
+			if(curGas < 0)
 			{
-				break;
+				start = i + 1;
+				curGas = 0;
 			}
-			cnt++;
 		}
-		if (cnt==n)
-		{
-			return start;
-		}
-		else
-		{
-			start = start + cnt + 1;
-		}
+		if(totalGas < 0)
+			return -1;
+		return start;		
 	}
-	return -1;
-}
+};
 
-int main()
+int main(int argc, char* argv[])
 {
-	vector<int> gas = { 4,0,1 };
-	vector<int> cost = { 3,2,1 };
-	int start;
-	start = canCompleteCircuit(gas, cost);
-	cout << start;
+	return 0;
 }
